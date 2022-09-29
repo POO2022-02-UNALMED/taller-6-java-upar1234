@@ -11,6 +11,6 @@ public class Vehiculo {
 	private int peso;
 	private String traccion;
 	private int fabricante;
-	protected static int cantidadVehiculos;
+	protected static int CantidadVehiculos;
 	
 }
