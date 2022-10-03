@@ -2,6 +2,7 @@ package Vehiculos;
 
 public class Vehiculo {
 	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso,String traccion, int fabricante) {
+		cantidadVehiculos++;
 	}
 	private String placa;
 	private int puertas;
@@ -10,7 +11,67 @@ public class Vehiculo {
 	private int precio;
 	private int peso;
 	private String traccion;
-	private int fabricante;
-	protected static int CantidadVehiculos;
+	private Fabricante fabricante;
+	protected static int cantidadVehiculos;
+	protected static int cantidadAutomoviles;
+	protected static int cantidadCamionetas;
+	protected static int cantidadCamiones;
+
+	public static String vehiculosPorTipo() {
+		return ("Automoviles: "+cantidadVehiculos+"\nCamionetas: "+cantidadCamionetas+"\nCamiones: "+cantidadCamiones);
+	}
+	
+	public Pais paisMasVendedor() {
+		return Pais;
+	}
+	
+	public String getPlaca() {
+		return this.placa;
+	}
+	public void setPlaca(String p) {
+		this.placa=p;
+	}
+	public int getPuertas() {
+		return this.puertas;
+	}
+	public void setPuertas(int puertas) {
+		this.puertas=puertas;
+	}
+	public int getVelocidadMaxima() {
+		return this.velocidadMaxima;
+	}
+	public void setVelocidadMaxima( int vm) {
+		this.velocidadMaxima=vm;
+	}
+	public String getNombre() {
+		return this.nombre;
+	}
+	public void setNombre(String n) {
+		this.nombre=n;
+	}
+	public int getPrecio() {
+		return this.precio;
+	}
+	public void setPrecio(int p) {
+		this.precio=p;
+	}
+	public int getPeso() {
+		return this.peso;
+	}
+	public void setPeso(int pe) {
+		this.peso=pe;
+	}
+	public String getTraccion() {
+		return this.traccion;
+	}
+	public void setTraccion(String t) {
+		this.traccion=t;
+	}
+	public Fabricante getFabricante() {
+		return this.fabricante;
+	}
+	public void setFabricante(Fabricante f) {
+		this.fabricante=f;
+	}
 	
 }
