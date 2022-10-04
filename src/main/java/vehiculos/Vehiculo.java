@@ -12,8 +12,16 @@ public class Vehiculo {
 	protected static int cantidadVehiculos=Automovil.getCantidadAutomoviles()+Camion.getCantidadCamiones()+Camioneta.getCantidadCamionetas();
 	
 	
-	
 	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso,String traccion, Fabricante fabricante) {
+		this.placa=placa;
+		this.puertas=puertas;
+		this.velocidadMaxima=velocidadMaxima;
+		this.nombre=nombre;
+		this.precio=precio;
+		this.peso=peso;
+		this.traccion=traccion;
+		this.fabricante=fabricante;
+		
 		if (Pais.ventasPorPais.containsKey(fabricante.getPais())) {
 			Pais.ventasPorPais.put(fabricante.getPais(), Pais.ventasPorPais.get(fabricante.getPais())+1);
 		}else {
