@@ -12,13 +12,10 @@ public class Vehiculo {
 	private int peso;
 	private String traccion;
 	private Fabricante fabricante;
-	protected static int cantidadAutomoviles;
-	protected static int cantidadCamionetas;
-	protected static int cantidadCamiones;
 	protected static int cantidadVehiculos;
 	
 	public static String vehiculosPorTipo() {
-		return ("Automoviles: "+cantidadAutomoviles+"\nCamionetas: "+cantidadCamionetas+"\nCamiones: "+cantidadCamiones);
+		return ("Automoviles: "+Automovil.getCantidadAutomoviles()+"\nCamionetas: "+Camioneta.getCantidadCamionetas()+"\nCamiones: "+Camion.getCantidadCamiones());
 	}
 	
 	
