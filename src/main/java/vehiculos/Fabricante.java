@@ -13,7 +13,7 @@ public class Fabricante {
 	this.nombre=nombre;
 	this.pais=pais;
 	}
-	public void fabricaMayorVentas() {
+	public Fabricante fabricaMayorVentas() {
 		int valorMax=-1;
 		Fabricante fabricaMayorVentas=null;
 		
@@ -25,6 +25,7 @@ public class Fabricante {
 				fabricaMayorVentas=entry.getkey();
 			}	
 		}
+		return fabricaMayorVentas;
 	}
 	public String getNombre() {
 		return this.nombre;
