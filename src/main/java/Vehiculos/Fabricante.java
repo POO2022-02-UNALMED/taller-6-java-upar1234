@@ -10,7 +10,7 @@ public class Fabricante {
 	this.pais=pais;
 	HashMap<Fabricante, Integer> ventasPorFabrica= new HashMap<Fabricante, Integer>();
 	}
-	public Pais paisMasVendedor() {
+	public void paisMasVendedor() {
 		
 		
 	}
