@@ -20,8 +20,7 @@ public class Pais {
 		for(Entry<Pais, Integer> entry : ventasPorPais.entrySet()){
 			final int valorActual = entry.getValue();
 			
-			if(valorActual>valorMax)
-			{
+			if(valorActual>valorMax){
 				valorMax=valorActual;
 				paisMasVendedor=entry.getKey();
 			}

@@ -20,8 +20,8 @@ public class Fabricante {
 		for (Entry<Fabricante, Integer> entry : ventasPorFabrica.entrySet()) {
 		    final int valorActual = entry.getValue();
 
-		    if (valorActual > valorMax) 
-		    {
+		    if (valorActual > valorMax) {
+		    	
 		    	valorMax = valorActual;
 		    	fabricaMayorVentas = entry.getKey();
 		    } 	   
