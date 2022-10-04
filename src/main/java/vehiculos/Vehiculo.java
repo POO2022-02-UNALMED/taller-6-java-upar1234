@@ -1,4 +1,4 @@
-package Vehiculos;
+package vehiculos;
 
 public class Vehiculo {
 	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso,String traccion, Fabricante fabricante) {
