@@ -17,13 +17,14 @@ public class Fabricante {
 		int valorMax=-1;
 		Fabricante fabricaMayorVentas=null;
 		
-		for (Entry<Fabricante, Integer> entry: ventasPorFabrica.entrySet()){
-			final int valorActual = entry.getValue();
-			if(valorActual>valorMax)
-			{
-				valorMax=valorActual;
-				fabricaMayorVentas=entry.getkey();
-			}	
+		for (Entry<Fabricante, Integer> entry : ventasPorFabrica.entrySet()) {
+		    final int valorActual = entry.getValue();
+
+		    if (valorActual > valorMax) 
+		    {
+		    	valorMax = valorActual;
+		    	fabricaMayorVentas = entry.getKey();
+		    } 	   
 		}
 		return fabricaMayorVentas;
 	}
