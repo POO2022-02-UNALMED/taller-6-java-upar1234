@@ -13,7 +13,7 @@ public class Fabricante {
 	this.nombre=nombre;
 	this.pais=pais;
 	}
-	public Fabricante fabricaMayorVentas() {
+	static public Fabricante fabricaMayorVentas() {
 		int valorMax=-1;
 		Fabricante fabricaMayorVentas=null;
 		
