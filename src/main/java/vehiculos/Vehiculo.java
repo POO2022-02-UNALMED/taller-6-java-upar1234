@@ -1,9 +1,6 @@
 package vehiculos;
 
 public class Vehiculo {
-	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso,String traccion, Fabricante fabricante) {
-		cantidadVehiculos++;
-	}
 	private String placa;
 	private int puertas;
 	private int velocidadMaxima;
@@ -14,6 +11,12 @@ public class Vehiculo {
 	private Fabricante fabricante;
 	protected static int cantidadVehiculos;
 	
+	
+	
+	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso,String traccion, Fabricante fabricante) {
+		cantidadVehiculos++;
+	}
+
 	public static String vehiculosPorTipo() {
 		return ("Automoviles: "+Automovil.getCantidadAutomoviles()+"\nCamionetas: "+Camioneta.getCantidadCamionetas()+"\nCamiones: "+Camion.getCantidadCamiones());
 	}
