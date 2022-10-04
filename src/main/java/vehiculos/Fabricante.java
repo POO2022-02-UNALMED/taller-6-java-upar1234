@@ -6,7 +6,7 @@ import java.util.Map.Entry;
 public class Fabricante {
 	private String nombre;
 	private Pais pais;
-	static Map<Fabricante, Integer> ventasPorFabrica= new HashMap<Fabricante, Integer>();
+	static Map<Fabricante, Integer> ventasPorFabrica= new HashMap<Fabricante, Integer>();	
 	
 	
 	public Fabricante (String nombre, Pais pais) {
@@ -17,7 +17,7 @@ public class Fabricante {
 		int valorMax=-1;
 		Fabricante fabricaMayorVentas=null;
 		
-		for (Entry<Fabricante, Integer> entry: ventasPorFabrica.entrySet());{
+		for (Entry<Fabricante, Integer> entry: ventasPorFabrica.entrySet()){
 			final int valorActual = entry.getValue();
 			if(valorActual>valorMax)
 			{
