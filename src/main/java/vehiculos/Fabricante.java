@@ -1,18 +1,30 @@
 package vehiculos;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
 
 public class Fabricante {
 	private String nombre;
 	private Pais pais;
+	static Map<Fabricante, Integer> ventasPorFabrica= new HashMap<Fabricante, Integer>();
+	
 	
 	public Fabricante (String nombre, Pais pais) {
 	this.nombre=nombre;
 	this.pais=pais;
-	HashMap<Fabricante, Integer> ventasPorFabrica= new HashMap<Fabricante, Integer>();
 	}
-	public void paisMasVendedor() {
+	public void fabricaMayorVentas() {
+		int valorMax=-1;
+		Fabricante fabricaMayorVentas=null;
 		
-		
+		for (Entry<Fabricante, Integer> entry: ventasPorFabrica.entrySet());{
+			final int valorActual = entry.getValue();
+			if(valorActual>valorMax)
+			{
+				valorMax=valorActual;
+				fabricaMayorVentas=entry.getkey();
+			}	
+		}
 	}
 	public String getNombre() {
 		return this.nombre;
